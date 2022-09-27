@@ -1,0 +1,154 @@
+html, body {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 40px;
+    color: cornflowerblue;
+}
+
+p {
+    color: darkcyan;
+}
+
+.game {
+    margin-top: -50px;
+    position: relative;
+    /* display: inline-block;*/
+    margin-left: 280px;
+    width: 20%;
+    height: auto;
+}
+
+.game img {
+    cursor: pointer;
+} 
+
+.game .ocean {
+    margin-top: 50px;
+    height: 430px;
+    width: auto;
+}
+
+.game .octopus {
+    position: absolute;
+    top: 400px;
+    left: 81px;
+    z-index: 1;
+    max-height: 100px;
+}
+
+.game .seahorse {
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    z-index: 1;
+    max-height: 60px;
+}
+
+.game .clownfish {
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    z-index: 1;
+    max-height: 70px;
+    /* visibility: visible; */
+}
+
+.game .mantaray {
+    position: absolute;
+    top: 390px;
+    left: 520px;
+    max-height: 80px;
+    z-index: 1;
+}
+
+.game .jellyfish {
+    position: absolute;
+    top: 250px;
+    left: 785px;
+    max-height: 40px;
+    z-index: 1;
+}
+
+.game .barracuda {
+    position: absolute;
+    top: 120px;
+    left: 520px;
+    max-height: 70px;
+    z-index: 1;
+    transform: rotate(-30deg);
+}
+
+.game .squid {
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    max-height: 80px;
+    z-index: 1;
+}
+
+.game .octopus, .game .seahorse, .game .clownfish, .game .mantaray, .game .jellyfish, .game .barracuda, .game .squid {
+    transition: max-height 750ms linear 400ms, opacity 750ms ease-in 1150ms, transform 1.5s ease-in-out;
+}
+/*
+.game .clownfish {
+    transition: visibility 750ms ease-in 2000ms;
+} */
+
+.game .octopus:hover {
+    max-height: 200px;
+   /* opacity: 0; */
+    transform: rotate(720deg);
+}
+
+.game .seahorse:hover {
+    max-height: 120px;
+   /* opacity: 0;*/
+    transform: rotate(720deg);
+}
+
+.game .clownfish:hover {
+    max-height: 140px;
+   /* opacity: 0; */
+    transform: rotate(720deg);
+}
+
+.game .mantaray:hover {
+    max-height: 160px;
+    /* opacity: 0; */
+    transform: rotate(720deg);
+}
+
+.game .jellyfish:hover {
+    max-height: 80px;
+   /* opacity: 0; */ 
+    transform: rotate(720deg);
+}
+
+.game .barracuda:hover {
+    max-height: 100px;
+    /* opacity: 0; */
+    transform: rotate(720deg);
+}
+
+.game .squid:hover {
+    max-height: 160px;
+    transform: rotate(720deg);
+}
+
+.checkbox {
+    margin-top: 50px;
+}
+
+a:visited img {
+    visibility: hidden;
+}
+
+li {
+    color: teal;
+}

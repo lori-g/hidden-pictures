@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Find the Sea Creatures</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+    <h1>Find the Sea Creatures</h1>
+    <p>Find the Sea Creatures listed below. Hover and click 'til you get them all!</p>
+
+    <div class="game">
+        <img class="octopus" id="octopus" src="./resources/images/octopus.png" alt="octopus">
+        <img class="seahorse" id="seahorse" src="./resources/images/seahorse.png" alt="seahorse">
+        <img class="clownfish" id="clownfish" src="./resources/images/clownfish.png" alt="clownfish">
+        <img class="mantaray" id="mantaray" src="./resources/images/mantaray.png" alt="mantaray">
+        <img class="jellyfish" id="jellyfish" src="./resources/images/jellyfish.png" alt="jellyfish">
+        <img class="barracuda" id="barracuda" src="./resources/images/barracuda.png" alt="barracuda">
+        <img class="squid" id="squid" src="./resources/images/squid.png" alt="squid">
+        <img class="ocean" src="https://www.scuba.com/blog/wp-content/uploads/2020/04/shutterstock_295429772.jpg" alt="ocean">
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("clownfish").onclick = function() {
+            document.getElementById("clownfish").style.display = "none";
+            document.getElementById("clownfish2").style.display = "none";
+        }
+
+        document.getElementById("octopus").onclick = function() {
+            document.getElementById("octopus").style.display = "none";
+            document.getElementById("octopus2").style.display = "none";
+        }
+
+        document.getElementById("seahorse").onclick = function() {
+            document.getElementById("seahorse").style.display = "none";
+            document.getElementById("seahorse2").style.display = "none";
+        }
+
+        document.getElementById("mantaray").onclick = function() {
+            document.getElementById("mantaray").style.display = "none";
+            document.getElementById("mantaray2").style.display = "none";
+        }
+
+        document.getElementById("jellyfish").onclick = function() {
+            document.getElementById("jellyfish").style.display = "none";
+            document.getElementById("jellyfish2").style.display = "none";
+        }
+
+        document.getElementById("barracuda").onclick = function() {
+        document.getElementById("barracuda").style.display = "none";
+        document.getElementById("barracuda2").style.display = "none";
+        }
+
+        document.getElementById("squid").onclick = function() {
+        document.getElementById("squid").style.display = "none";
+        document.getElementById("squid2").style.display = "none";
+        }
+    </script>
+
+    <div></div>
+
+    <ul style="list-style-type:none">
+        <li id="octopus2">Octopus</li>
+        <li id="jellyfish2">Jellyfish</li>
+        <li id="seahorse2">Seahorse</li>
+        <li id="mantaray2">Mantaray</li>
+        <li id="clownfish2">Clownfish</li>
+        <li id="barracuda2">Barracuda</li>
+        <li id="squid2">Squid</li>
+    </ul>
+    <!--- 
+    <div class="checkbox">
+        <input type="checkbox" id="creature1" name="creature1" value="Octopus">
+        <label for="creature1">Octopus</label>
+        <input type="checkbox" id="creature2" name="creature2" value="Seahorse">
+        <label for="creature2">Seahorse</label>
+        <input type="checkbox" id="creature3" name="creature3" value="Clownfish">
+        <label for="creature3">Clownfish</label> -->
+    </div>
+</body>
