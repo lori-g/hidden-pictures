@@ -4,6 +4,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     background-color: lightblue;
+    margin: 0 auto;
 }
 
 h1 {
@@ -13,8 +14,85 @@ h1 {
 
 p {
     color: darkcyan;
+    padding-bottom: 15px;
 }
 
+/* Navigation Bar */
+
+nav {
+    position: fixed;
+    z-index: 5;
+    left: -28em;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    background-color: navy;
+    font-family: "Proza Libre", serif;
+    font-size: 18px;
+    line-height: 2.2;
+    font-weight: bold;
+    color: #142033;
+    transition: left 2s ease-in 200ms;
+    max-width: 550px;
+}
+
+nav img {
+    max-width: 100px;
+}
+  
+nav:hover {
+   left: 0;
+}
+  
+nav .hover-content {
+    margin-right: 3em;
+}
+  
+nav h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: #639eff;
+    padding-top: -50px;
+}
+  
+nav h3 {
+    padding-bottom: 1.1em;
+}
+  
+nav ol {
+    list-style: upper-roman outside;
+}
+  
+nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms linear;
+}
+  
+nav a:hover,
+nav a.active {
+    color: #639eff;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    border-color: teal;
+    border-width: thick;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icons img {
+    max-height: 80px;
+    padding-right: 20px;
+}
+  
 .game {
     margin-top: -50px;
     position: relative;
@@ -22,6 +100,7 @@ p {
     /*margin-left: 280px;*/
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .game img {
@@ -32,6 +111,7 @@ p {
     margin-top: 50px;
     height: 430px;
     width: auto;
+    padding-bottom: 35px;
 }
 
 .game .octopus {
@@ -39,7 +119,7 @@ p {
     top: 400px;
     left: 361px;
     z-index: 1;
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .game .seahorse {
@@ -75,11 +155,11 @@ p {
     z-index: 1;
 }
 
-.game .barracuda {
+.game .eel {
     position: absolute;
-    top: 120px;
-    left: 800px;
-    max-height: 70px;
+    top: 150px;
+    left: 820px;
+    max-height: 60px;
     z-index: 1;
     transform: rotate(-30deg);
 }
@@ -92,7 +172,25 @@ p {
     z-index: 1;
 }
 
-.game .octopus, .game .seahorse, .game .clownfish, .game .mantaray, .game .jellyfish, .game .barracuda, .game .squid {
+.game .angelfish {
+    position: absolute;
+    top: 390px;
+    left: 1065px;
+    max-height: 60px;
+    z-index: 1;
+}
+
+.game .barracuda {
+    position: absolute;
+    top: 390px;
+    left: 700px;
+    max-height: 50px;
+    z-index: 1;
+    transform: rotate(30deg);
+}
+
+.game .octopus, .game .seahorse, .game .clownfish, .game .mantaray, .game .jellyfish, 
+.game .barracuda, .game .squid, .game .angelfish, .game .eel {
     transition: max-height 750ms linear 400ms, opacity 750ms ease-in 1150ms, transform 1.5s ease-in-out;
 }
 /*
@@ -138,6 +236,16 @@ p {
 
 .game .squid:hover {
     max-height: 160px;
+    transform: rotate(720deg);
+}
+
+.game .angelfish:hover {
+    max-height: 120px;
+    transform: rotate(720deg);
+}
+
+.game .eel:hover {
+    max-height: 120px;
     transform: rotate(720deg);
 }
 

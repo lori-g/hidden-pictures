@@ -5,6 +5,36 @@
 </head>
 
 <body>
+
+    <!--- 
+
+    <nav>
+        <div class="hover-content">
+          <h2>SEA CREATURES</h2>
+        <ol>
+            <li><a href="#">OCTOPUS</a></li>
+            <li><a href="#">EEL</a></li>
+            <li><a href="#">ANGELFISH</a></li>
+            <li><a href="#">MANTARAY</a></li>
+            <li><a href="#">SQUID</a></li>
+            <li><a href="#">CLOWNFISH</a></li>
+          </ol>
+        <img id="octopus2" src="./resources/images/octopus.png" alt="octopus">
+        <img id="angelfish2" src="./resources/images/angelfish.png" alt="angelfish">
+        <br><img id="clownfish2" src="./resources/images/clownfish.png" alt="clownfish">
+        <img id="seahorse2" src="./resources/images/seahorse.png" alt="seahorse">
+        <br><img id="jellyfish2" src="./resources/images/jellyfish.png" alt="jellyfish">
+        <img id="mantaray2" src="./resources/images/mantaray.png" alt="mantaray">
+        <br><img id="barracuda2" src="./resources/images/barracuda.png" alt="barracuda">
+        <img id="squid2" src="./resources/images/squid.png" alt="squid">
+        <br><img id="eel2" src="./resources/images/eel.png" alt="eel">
+        </div>
+        <div>
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-6/triangle.png">
+        </div>
+      </nav> -->
+
+
     <h1>Find the Sea Creatures</h1>
     <p>Find the Sea Creatures listed below. Hover and click 'til you get them all!</p>
 
@@ -16,57 +46,89 @@
         <img class="jellyfish" id="jellyfish" src="./resources/images/jellyfish.png" alt="jellyfish">
         <img class="barracuda" id="barracuda" src="./resources/images/barracuda.png" alt="barracuda">
         <img class="squid" id="squid" src="./resources/images/squid.png" alt="squid">
+        <img class="angelfish" id="angelfish" src="./resources/images/angelfish.png" alt="angelfish">
+        <img class="eel" id="eel" src="./resources/images/eel.png" alt="eel">
         <img class="ocean" src="https://www.scuba.com/blog/wp-content/uploads/2020/04/shutterstock_295429772.jpg" alt="ocean">
     </div>
 
     <script type="text/javascript">
         document.getElementById("clownfish").onclick = function() {
             document.getElementById("clownfish").style.display = "none";
-            document.getElementById("clownfish2").style.display = "none";
+            document.getElementById("clownfish2").style.visibility = "hidden";
         }
 
         document.getElementById("octopus").onclick = function() {
             document.getElementById("octopus").style.display = "none";
-            document.getElementById("octopus2").style.display = "none";
+            document.getElementById("octopus2").style.visibility = "hidden";
         }
 
         document.getElementById("seahorse").onclick = function() {
             document.getElementById("seahorse").style.display = "none";
-            document.getElementById("seahorse2").style.display = "none";
+            document.getElementById("seahorse2").style.visibility = "hidden";
         }
 
         document.getElementById("mantaray").onclick = function() {
             document.getElementById("mantaray").style.display = "none";
-            document.getElementById("mantaray2").style.display = "none";
+            document.getElementById("mantaray2").style.visibility = "hidden";
         }
 
         document.getElementById("jellyfish").onclick = function() {
             document.getElementById("jellyfish").style.display = "none";
-            document.getElementById("jellyfish2").style.display = "none";
+            document.getElementById("jellyfish2").style.visibility = "hidden";
         }
 
         document.getElementById("barracuda").onclick = function() {
         document.getElementById("barracuda").style.display = "none";
-        document.getElementById("barracuda2").style.display = "none";
+        document.getElementById("barracuda2").style.visibility = "hidden";
         }
 
         document.getElementById("squid").onclick = function() {
-        document.getElementById("squid").style.display = "none";
-        document.getElementById("squid2").style.display = "none";
+            document.getElementById("squid").style.display = "none";
+            document.getElementById("squid2").style.visibility = "hidden";
+        }
+
+        document.getElementById("angelfish").onclick = function() {
+            document.getElementById("angelfish").style.display = "none";
+            document.getElementById("angelfish2").style.visibility = "hidden";
+        }
+
+        document.getElementById("eel").onclick = function() {
+            document.getElementById("eel").style.display = "none";
+            document.getElementById("eel2").style.visibility = "hidden";
         }
     </script>
 
     <div></div>
+<!--- 
+            document.getElementById("jellyfish").onclick = function() {
+            document.getElementById("jellyfish").style.display = "none";
+            document.getElementById("jellyfish2").style.display = "none";
+        }
 
     <ul style="list-style-type:none">
         <li id="octopus2">Octopus</li>
         <li id="jellyfish2">Jellyfish</li>
         <li id="seahorse2">Seahorse</li>
         <li id="mantaray2">Mantaray</li>
+        <li id="eel2">Eel</li>
         <li id="clownfish2">Clownfish</li>
         <li id="barracuda2">Barracuda</li>
         <li id="squid2">Squid</li>
-    </ul>
+        <li id="angelfish2">Angelfish</li>
+    </ul> -->
+
+    <div class="icons">
+          <img id="octopus2" src="./resources/images/octopus.png" alt="octopus">
+          <img id="angelfish2" src="./resources/images/angelfish.png" alt="angelfish">
+          <br><img id="clownfish2" src="./resources/images/clownfish.png" alt="clownfish">
+          <img id="seahorse2" src="./resources/images/seahorse.png" alt="seahorse">
+          <br><img id="jellyfish2" src="./resources/images/jellyfish.png" alt="jellyfish">
+          <img id="mantaray2" src="./resources/images/mantaray.png" alt="mantaray">
+          <br><img id="barracuda2" src="./resources/images/barracuda.png" alt="barracuda">
+          <img id="squid2" src="./resources/images/squid.png" alt="squid">
+          <br><img id="eel2" src="./resources/images/eel.png" alt="eel">
+          </div>
+    </div>
     <!--- 
     <div class="checkbox">
         <input type="checkbox" id="creature1" name="creature1" value="Octopus">
